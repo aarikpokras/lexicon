@@ -46,7 +46,7 @@ while 0
     wordsq=words[2]
 #    puts wordsq
     emob wordsq
-  elsif inpm.match(/Thank you/) || inpm.match(/thanks/)
+  elsif inpm == "Thank you" || inpm == "Thanks" || inpm == "thank you" || inpm == "thanks"
     thankyou = ["You're welcome! I'm always happy to help.","You're welcome!","No problem!",]
     thankout=thankyou.sample(1)
     puts thankout
