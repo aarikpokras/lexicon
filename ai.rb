@@ -29,7 +29,7 @@ while 0
     puts "Ok. I'll remember that " + learnersub.chomp + " " + anchor + " " + learner.chomp.gsub(Regexp.union(ivregex), "") + "."
     File.write("LearnEngine/" + learnersub.chomp, learner.chomp.gsub(Regexp.union(ivregex), "") + "\n", mode: "w+")
     end
-  elsif inpm.match(/good/)
+  elsif inpm == "good"
     puts "I'm glad you're feeling good!"
   elsif inpm.match(/what's/) || inpm.match(/what/)
     ui=inpm.split
@@ -50,5 +50,30 @@ while 0
     thankyou = ["You're welcome! I'm always happy to help.","You're welcome!","No problem!",]
     thankout=thankyou.sample(1)
     puts thankout
- end
+  elsif inpm == "help"
+    puts "You can get help by following this link:\n\033[1;37mhttps://github.com/aarikpokras/ai.rb/blob/main/README.md\033[0m\n"
+  elsif inpm.match(/How do you/) || inpm.match(/how do you/)
+    lang=inpm.split
+    action=lang[3]
+    #puts action
+    if lang[5].match(/Python/) || lang[5].match(/python/)
+      if action == "print" || action == "Print"
+        pyprint = ["In Python, you can print by running ","In Python, you can run this to print: ","To print something in Python, you can run: "]
+        pyout=pyprint.sample(1)
+        puts pyout << "\`print(\"your content here\")\`"
+      end
+    elsif lang[5].match(/Ruby/) || lang[5].match(/ruby/)
+      if action == "print" || action == "Print"
+        rbprint = ["In Ruby, there are multiple ways to print something: ","In Ruby, you can put one of these in your file to print: ","Here are some ways to print in Ruby."]
+        rb1=rbprint.sample(1)
+        puts rb1 << "puts \"Your content here\" or\nprint \"Your content here\""
+      end
+    elsif lang[5].match(/Perl/) || lang[5].match(/perl/)
+      if action == "print" || action == "Print"
+        puts "I don't know that just yet."
+      end
+    else
+      puts "I don't know how to " << action << " in " << lang[5] << " yet."
+    end
+  end
 end
