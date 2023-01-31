@@ -1,0 +1,19 @@
+.\" Manpage for ai.rb
+.\" Contact aarik@searchme.one.
+.TH AIRB 1 "01 Jan 2023" "1.0" "AI.RB MANUAL"
+.SH NAME
+ai.rb \- A tiny AI engine that you teach
+.SH DESCRIPTION
+ai.rb is a tiny AI engine that you teach. It knows primitive phrases like "hello", etc. It does not accept any arguments. To learn what something is (that you taught it), you can type \`what is Apple\` or \`what's UNIX\`, whatever is appropriate for the situation.
+.SH OPTIONS
+ai.rb doesn't accept any options.
+.SH SEE ALSO
+ruby
+.SH BUGS
+When you type something like 'So, I walked up to him and I said "greetings, fellow human"', it will greet you because it notices the word 'greetings'.
+.SH AUTHOR
+Aarik Pokras (aarik@searchme.one)
+.SH REQUESTING IMPROVEMENTS
+You can make a fork of the GitHub repo at https://github.com/aarikpokras/ai.rb/fork, then you can edit the code and submit a pull request.
+.SH Have fun!
+:)
