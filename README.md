@@ -9,3 +9,5 @@ To find out what something is, you can type `what's a pool` or `what is Apple`
 Learn files are stored in `LearnEngine/[learnfile]`
 #
 Feel free to fork this repo, edit the code, and do a pull request.
+
+For more information, run `man ./airb`
