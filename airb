@@ -8,7 +8,7 @@ ai.rb is a tiny AI engine that you teach. It knows primitive phrases like "hello
 .SH OPTIONS
 ai.rb doesn't accept any options.
 .SH SEE ALSO
-ruby
+ruby(1)
 .SH BUGS
 When you type something like 'So, I walked up to him and I said "greetings, fellow human"', it will greet you because it notices the word 'greetings'.
 .SH AUTHOR
