@@ -74,7 +74,7 @@ while 0
         puts "I don't know that just yet."
       end
     else
-      puts "I don't know how to " << action << " in " << lang[5] << " yet."
+      puts "I don't know how to " << action << " in " << lang[5] << " yet.\nI'd recommend forking the repo, editing the code, and making a pull request.\nhttps://github.com/aarikpokras/ai.rb/fork"
     end
   end
 end
