@@ -8,5 +8,5 @@ elsif($option =~ "e"){
   exit;
 }
 elsif($option =~ "m"){
-  system("man ./airb");
+  system("man ./airb.1");
 }
