@@ -10,4 +10,4 @@ Learn files are stored in `LearnEngine/[learnfile]`
 #
 Feel free to fork this repo, edit the code, and do a pull request.
 
-For more information, run `man ./airb`
+For more information, run `./run.pl` and type `m`.
