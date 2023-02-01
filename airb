@@ -25,7 +25,17 @@
 .SH NAME
 ai.rb \- A tiny AI engine that you teach
 .SH DESCRIPTION
-ai.rb is a tiny AI engine that you teach. It knows primitive phrases like "hello", etc. It does not accept any arguments. To learn what something is (that you taught it), you can type \`what is Apple\` or \`what's UNIX\`, whatever is appropriate for the situation.
+ai.rb is a tiny AI engine that you teach. It knows primitive phrases like "hello", etc. It does not accept any arguments.
+.SH TEACHING IT STUFF
+You can teach ai.rb something by typing \`learn\`. Then enter information about it.
+Ex:
+What do you want me to learn about?
+\`Apple\`
+Teach me.
+\`It's a tech company\`
+Ok, I'll remember that Apple is a tech company.
+.SH LEARNING FROM THE TAUGHT CONTENT
+You can type \`What's Apple\` or \`What's an airplane\` \- whatever is appropriate for the situation.
 .SH OPTIONS
 ai.rb doesn't accept any options.
 .SH SEE ALSO
