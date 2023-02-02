@@ -11,8 +11,10 @@ while 0
     puts greet
   elsif inpm == "manual"
     puts "Opening manual."
-    sleep(1)
+    sleep(0.5)
     system("man ./airb.1")
+    sleep(0.5)
+    puts "Hope that helped!"
   elsif inpm.match(/learn/)
     if inpm.split[1] == "about"
       learnersub=inpm.split[2]
