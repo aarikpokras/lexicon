@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 require_relative "EmotionEngine/emotion"
-puts "Hi, I'm Coeus! For help, you can type 'manual' or go to the GitHub page."
+puts "Hi, I'm Lexi! For help, you can type 'manual' or go to the GitHub page."
 while 0
   print "> "
   inp=gets
@@ -9,10 +9,13 @@ while 0
     greetings = ["Hello!", "Hi!", "Hi there!", "Greetings!", "Beans on toast!", "How are you doing?",]
     greet=greetings.sample(1)
     puts greet
+  elsif inpm.downcase.match(/how are you/)
+    howru = ["I'm doing good, thanks for asking!","Great, thanks!","Great, thanks for asking!"]
+    puts howru.sample(1)
   elsif inpm == "manual"
     puts "Opening manual."
     sleep(0.5)
-    system("man ./airb.1")
+    system("man ./lexi.1")
     sleep(0.5)
     puts "Hope that helped!"
   elsif inpm.match(/learn/)
@@ -80,7 +83,7 @@ while 0
     thankout=thankyou.sample(1)
     puts thankout
   elsif inpm == "help"
-    puts "You can get help by following this link:\n\033[1;37mhttps://github.com/aarikpokras/ai.rb/blob/main/README.md\033[0m\nor you can run \`man ./airb\`"
+    puts "You can get help by following this link:\n\033[1;37mhttps://github.com/aarikpokras/ai.rb/blob/main/README.md\033[0m\nor you can run \`man ./lexi.1\`"
   # For example, you can type `How do you print in Python`
   elsif inpm.match(/How do you/) || inpm.match(/how do you/)
     lang=inpm.split
@@ -103,7 +106,7 @@ while 0
         puts "I don't know that just yet."
       end
     else
-      puts "I don't know how to " << action << " in " << lang[5] << " yet.\nI'd recommend forking the repo, editing the code, and making a pull request.\nhttps://github.com/aarikpokras/ai.rb/fork"
+      puts "Sorry, I don't know how to " << action << " in " << lang[5] << " yet.\nI'd recommend forking the repo, editing the code, and making a pull request.\n\033[1;37mhttps://github.com/aarikpokras/ai.rb/fork\033[0m\nOr it's possible that you used the wrong format.\n\033[1;37mHow do you print in Python\033[0m would be the correct format.\n"
     end
   end
 end
