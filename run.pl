@@ -5,7 +5,7 @@ chomp($option);
 if(lc($option) eq "r"){
   system("./ai.rb");
 }
-elsif(lc($option) eq "e"){
+elsif(lc($option) eq "x"){
   exit;
 }
 elsif(lc($option) eq "m"){
