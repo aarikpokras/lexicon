@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 require_relative "EmotionEngine/emotion"
+puts "Hi, I'm Coeus! For help, you can type 'manual' or go to the GitHub page."
 while 0
   print "> "
   inp=gets
@@ -8,6 +9,10 @@ while 0
     greetings = ["Hello!", "Hi!", "Hi there!", "Greetings!", "Beans on toast!", "How are you doing?",]
     greet=greetings.sample(1)
     puts greet
+  elsif inpm == "manual"
+    puts "Opening manual."
+    sleep(1)
+    system("man ./airb.1")
   elsif inpm.match(/learn/)
     if inpm.split[1] == "about"
       learnersub=inpm.split[2]
