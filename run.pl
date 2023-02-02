@@ -12,5 +12,5 @@ elsif(lc($option) eq "m"){
   system("man ./airb.1");
 }
 else{
-  print "I don't know that."
+  print "I don't know that.\n"
 }
