@@ -9,6 +9,27 @@ while 0
     greet=greetings.sample(1)
     puts greet
   elsif inpm.match(/learn/)
+    if inpm.split[1] == "about"
+      learnersub=inpm.split[2]
+      learnc = ["Teach me!", "Enlighten me.", "Tell me about this.",]
+      learnout=learnc.sample(1)
+      puts learnout
+      learner=gets
+      learnersubb=Regexp.new(learnersub)
+      if learner.chomp =~ learnersubb
+        puts "Please try that again without including the subject in the about line."
+      else
+        ivregex = [/its/, /is/, /it's/, /are/, /theyre/, /they're/, /they/]
+        ends_in_s=/s$/
+        if ends_in_s.match(learnersub)
+          anchor='are'
+        else
+          anchor='is'
+        end
+        puts "Ok. I'll remember that " + learnersub + " " + anchor + " " + learner.chomp.gsub(Regexp.union(ivregex), "") + "."
+        File.write("LearnEngine/" + learnersub, learner.gsub(Regexp.union(ivregex), "") + "\n", mode: "w+")
+      end
+    else
     puts "What's the name of the thing you want me to learn about? "
     learnersub=gets
     learnc = ["Teach me!", "Enlighten me.", "Tell me about this.",]
@@ -28,6 +49,7 @@ while 0
     end
     puts "Ok. I'll remember that " + learnersub.chomp + " " + anchor + " " + learner.chomp.gsub(Regexp.union(ivregex), "") + "."
     File.write("LearnEngine/" + learnersub.chomp, learner.chomp.gsub(Regexp.union(ivregex), "") + "\n", mode: "w+")
+    end
     end
   elsif inpm == "good"
     puts "I'm glad you're feeling good!"
