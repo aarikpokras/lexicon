@@ -1,5 +1,5 @@
 #!/usr/bin/perl -w
-print "\033[4;37mR\033[0mun, e\033[4;37mx\033[0mit, or \033[4;37mM\033[0manpage? ";
+print "\033[4;37mR\033[0mun, e\033[4;37mx\033[0mit, \033[4;37mM\033[0manpage, or check for \033[4;37mU\033[0mpdates? ";
 $option = <>;
 chomp($option);
 if(lc($option) eq "r"){
@@ -11,7 +11,10 @@ elsif(lc($option) eq "x"){
 elsif(lc($option) eq "m"){
   system("man /usr/local/bin/lexi.1");
 }
+elsif(lc($option) eq "u"){
+  system("if [ $(curl https://raw.githubusercontent.com/aarikpokras/lexicon/main/VERSION) != "230" ];then echo "Please update LexiCon."; else echo "LexiCon is up to date."; fi")
+}
 else{
-  print "I don't know that.\nType 'r' to run, 'x' to exit, and 'm' for the manpage.\n"
+  print "I don't know that.\nType 'r' to run, 'x' to exit, 'm' for the manpage, and 'u' to check updates.\n"
 }
 
