@@ -22,5 +22,5 @@ Sorry I couldn't make a script for this, but here's some stuff to do if you want
 
 In other words, download the zip, unzip it in /usr/local/bin, and run this:
 ```bash
-cd /usr/local/bin/lexicon-main && mv * .. && cd && lexicon
+cd /usr/local/bin/lexicon-main && mv * .. && mv EmotionEngine .. && mv LearnEngine .. && cd && lexicon
 ```
