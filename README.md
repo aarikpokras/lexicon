@@ -10,7 +10,7 @@ Learn files are stored in `LearnEngine/[learnfile]`
 #
 Feel free to fork this repo, edit the code, and do a pull request.
 
-For more information, run `./run.pl` and type `m`.
+For more information, see the manpage.
 
 ## Installing it as a command (Recommended)
 Sorry I couldn't make a script for this, but here's some stuff to do if you want to run `lexicon` as a terminal command.
