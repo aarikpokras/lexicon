@@ -11,3 +11,11 @@ Learn files are stored in `LearnEngine/[learnfile]`
 Feel free to fork this repo, edit the code, and do a pull request.
 
 For more information, run `./run.pl` and type `m`.
+
+## Installing it as a command
+Sorry I couldn't make a script for this, but here's some stuff to do if you want to run `lexicon` as a terminal command.
+
+1. Download the main branch zip.
+2. Unzip it in `/usr/local/bin`.
+3. Move all the files out of the folder and delete the folder.
+4. Run `cd && lexicon`
