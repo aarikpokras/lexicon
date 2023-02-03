@@ -24,6 +24,6 @@ brew install rsync
 
 To get it as a command, you can run this: 
 ```bash
-/bin/bash -c "$(curl https://raw.githubusercontent.com/aarikpokras/lexicon/main/install.sh)"
+sudo /bin/bash -c "$(curl https://raw.githubusercontent.com/aarikpokras/lexicon/main/install.sh)"
 ```
 Then run `lexicon`. It should work.
