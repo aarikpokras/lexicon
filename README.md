@@ -13,7 +13,7 @@ Feel free to fork this repo, edit the code, and do a pull request.
 For more information, see the manpage.
 
 ## Installing it as a command (Recommended)
-You're gonna need `rsync`.
+You're gonna need `rsync`. You probably already have it (Ubuntu and other Linux distros come with it installed).
 
 ```console
 sudo apt-get install rsync
