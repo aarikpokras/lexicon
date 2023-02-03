@@ -20,7 +20,7 @@ Sorry I couldn't make a script for this, but here's some stuff to do if you want
 3. Move all the files out of the folder and delete the folder.
 4. Run `cd && lexicon`
 
-In other words, download the zip, unzip it in /usr/local/bin, and run this:
+In other words, run this:
 ```bash
-cd /usr/local/bin/lexicon-main && rsync -a * .. && cd && lexicon
+curl -Lo lx.zip https://github.com/aarikpokras/lexicon/archive/refs/heads/main.zip && rsync -a lx.zip /usr/local/bin && unzip lx.zip && cd lexicon-main && rsync -a * .. && cd
 ```
