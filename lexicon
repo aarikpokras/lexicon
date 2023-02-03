@@ -13,6 +13,7 @@ elsif(lc($option) eq "m"){
 }
 elsif(lc($option) eq "u"){
   system("if [ $(curl https://raw.githubusercontent.com/aarikpokras/lexicon/main/VERSION) != "230" ];then echo "Please update LexiCon."; else echo "LexiCon is up to date."; fi")
+  exit;
 }
 else{
   print "I don't know that.\nType 'r' to run, 'x' to exit, 'm' for the manpage, and 'u' to check updates.\n"
