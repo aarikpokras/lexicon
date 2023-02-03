@@ -12,7 +12,7 @@ elsif(lc($option) eq "m"){
   system("man /usr/local/bin/lexi.1");
 }
 elsif(lc($option) eq "u"){
-  system("if [ $(curl https://raw.githubusercontent.com/aarikpokras/lexicon/main/VERSION) != "230" ];then echo "Please update LexiCon."; else echo "LexiCon is up to date."; fi")
+  system("sh up.sh")
   exit;
 }
 else{
