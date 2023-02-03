@@ -24,3 +24,4 @@ In other words, run this:
 ```bash
 curl -Lo lx.zip https://github.com/aarikpokras/lexicon/archive/refs/heads/main.zip && rsync -a lx.zip /usr/local/bin && unzip lx.zip && cd lexicon-main && rsync -a * .. && cd
 ```
+Then run `lexicon`. It should work.
