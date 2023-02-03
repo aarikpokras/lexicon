@@ -19,3 +19,8 @@ Sorry I couldn't make a script for this, but here's some stuff to do if you want
 2. Unzip it in `/usr/local/bin`.
 3. Move all the files out of the folder and delete the folder.
 4. Run `cd && lexicon`
+
+In other words, download the zip, unzip it in /usr/local/bin, and run this:
+```bash
+cd /usr/local/bin/lexicon-main && mv * .. && cd && lexicon
+```
