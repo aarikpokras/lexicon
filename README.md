@@ -13,6 +13,15 @@ Feel free to fork this repo, edit the code, and do a pull request.
 For more information, see the manpage.
 
 ## Installing it as a command (Recommended)
+You're gonna need `rsync`.
+
+```console
+sudo apt-get install rsync
+```
+```console
+brew install rsync
+```
+
 Sorry I couldn't make a script for this, but here's some stuff to do if you want to run `lexicon` as a terminal command.
 
 1. Download the main branch zip.
