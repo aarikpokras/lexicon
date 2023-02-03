@@ -9,7 +9,7 @@ elsif(lc($option) eq "x"){
   exit;
 }
 elsif(lc($option) eq "m"){
-  system("man ./lexi.1");
+  system("man /usr/local/bin/lexi.1");
 }
 else{
   print "I don't know that.\n"
