@@ -12,6 +12,6 @@ elsif(lc($option) eq "m"){
   system("man /usr/local/bin/lexi.1");
 }
 else{
-  print "I don't know that.\n"
+  print "I don't know that.\nType 'r' to run, 'x' to exit, and 'm' for the manpage.\n"
 }
 
