@@ -1,4 +1,4 @@
-VER="322"
+VER="323"
 
 THX_VAR='sudo /bin/bash -c "$(curl https://raw.githubusercontent.com/aarikpokras/lexicon/main/install.sh)"'
 CHANGEL=$(curl --silent https://raw.githubusercontent.com/aarikpokras/lexicon/main/CL_NU)
