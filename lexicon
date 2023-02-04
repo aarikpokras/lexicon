@@ -13,10 +13,10 @@ elsif ($ARGV[0] eq "-u"){
   system("sh /usr/local/bin/up.sh");
 }
 else{
-  print "Invalid option: $ARGV[0]\n";
+  print "lexicon: Invalid option: $ARGV[0]\n";
   print "-r       run\n-m       manpage\n-u       check for updates\n";
 }
 }
 else{
-  print "Use flag -h for help.\n";
+  print "-r       run\n-m       manpage\n-u       check for updates\n";
 }
