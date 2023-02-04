@@ -15,7 +15,7 @@ while 0
   elsif inpm == "manual"
     puts "Opening manual."
     sleep(0.5)
-    system("man ./lexi.1")
+    system("man lexicon")
     sleep(0.5)
     puts "Hope that helped!"
   elsif inpm.match(/learn/)
@@ -83,7 +83,7 @@ while 0
     thankout=thankyou.sample(1)
     puts thankout
   elsif inpm == "help"
-    puts "You can get help by following this link:\n\033[1;37mhttps://github.com/aarikpokras/ai.rb/blob/main/README.md\033[0m\nor you can run \`man ./lexi.1\`"
+    puts "You can get help by following this link:\n\033[1;37mhttps://github.com/aarikpokras/ai.rb/blob/main/README.md\033[0m\nor you can run \`man lexicon\`"
   # For example, you can type `How do you print in Python`
   elsif inpm.match(/How do you/) || inpm.match(/how do you/)
     lang=inpm.split
