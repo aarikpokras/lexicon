@@ -5,6 +5,6 @@ curl -Lo lx.zip https://github.com/aarikpokras/lexicon/archive/refs/heads/main.z
 mv /usr/local/bin/lexicon.1 /usr/local/share/man/man1/lexicon.1
 printf '\033[1;32mDone!\033[0m\n'
 else
-printf "\033[1;31mPlease run \n\nmkdir /usr/local/share/man/man1\033[0m\n"
+printf "\033[1;31mPlease run \n\nsudo mkdir /usr/local/share/man/man1\033[0m\nand then try again.\n\n"
 fi
 # You're gonna have to wait a little bit for the command to work
