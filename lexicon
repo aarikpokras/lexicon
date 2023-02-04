@@ -1,23 +1,4 @@
 #!/usr/bin/perl -w
-print "\033[4;37mR\033[0mun, e\033[4;37mx\033[0mit, \033[4;37mM\033[0manpage, or check for \033[4;37mU\033[0mpdates? ";
-$option = <>;
-chomp($option);
-if(lc($option) eq "r"){
-  system("/usr/local/bin/lexi.rb");
-}
-elsif(lc($option) eq "x"){
-  exit;
-}
-elsif(lc($option) eq "m"){
-  system("man /usr/local/bin/lexi.1");
-}
-elsif(lc($option) eq "u"){
-  system("sh /usr/local/bin/up.sh")
-}
-else{
-  print "I don't know that.\nType 'r' to run, 'x' to exit, 'm' for the manpage, and 'u' to check updates.\n"
-}
-
 if ($ARGV[0] eq "-h"){
   print "-r       run\n-m       manpage\n-u       check for updates";
 }
@@ -29,4 +10,25 @@ elsif ($ARGV[0] eq "-m"){
 }
 elsif ($ARGV[0] eq "-u"){
   system("sh /usr/local/bin/up.sh");
+}
+else{
+  print "\033[4;37mR\033[0mun, e\033[4;37mx\033[0mit, \033[4;37mM\033[0manpage, or check for \033[4;37mU\033[0mpdates? ";
+  $option = <>;
+  chomp($option);
+  if(lc($option) eq "r"){
+    system("/usr/local/bin/lexi.rb");
+  }
+  elsif(lc($option) eq "x"){
+    exit;
+  }
+  elsif(lc($option) eq "m"){
+    system("man /usr/local/bin/lexi.1");
+  }
+  elsif(lc($option) eq "u"){
+    system("sh /usr/local/bin/up.sh")
+  }
+  else{
+    print "I don't know that.\nType 'r' to run, 'x' to exit, 'm' for the manpage, and 'u' to check updates.\n"
+  }
+
 }
