@@ -1,4 +1,5 @@
 #!/usr/bin/perl -w
+if (defined $ARGV[0]){
 if ($ARGV[0] eq "-h"){
   print "-r       run\n-m       manpage\n-u       check for updates\n";
 }
@@ -14,4 +15,8 @@ elsif ($ARGV[0] eq "-u"){
 else{
   print "Invalid option: $ARGV[0]\n";
   print "-r       run\n-m       manpage\n-u       check for updates\n";
+}
+}
+else{
+  print "Use flag -h for help.\n";
 }
