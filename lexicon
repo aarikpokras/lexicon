@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 if ($ARGV[0] eq "-h"){
-  print "-r       run\n-m       manpage\n-u       check for updates";
+  print "-r       run\n-m       manpage\n-u       check for updates\n";
 }
 elsif ($ARGV[0] eq "-r"){
   system("/usr/local/bin/lexi.rb");
@@ -12,6 +12,7 @@ elsif ($ARGV[0] eq "-u"){
   system("sh /usr/local/bin/up.sh");
 }
 else{
+  system("clear");
   print "\033[4;37mR\033[0mun, e\033[4;37mx\033[0mit, \033[4;37mM\033[0manpage, or check for \033[4;37mU\033[0mpdates? ";
   $option = <>;
   chomp($option);
