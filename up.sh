@@ -1,4 +1,4 @@
-VER="301"
+VER="320"
 
 THX_VAR='sudo /bin/bash -c "$(curl https://raw.githubusercontent.com/aarikpokras/lexicon/main/install.sh)"'
 
