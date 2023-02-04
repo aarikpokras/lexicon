@@ -7,7 +7,7 @@ elsif ($ARGV[0] eq "-r"){
   system("/usr/local/bin/lexi.rb");
 }
 elsif ($ARGV[0] eq "-m"){
-  system("man /usr/local/bin/lexi.1");
+  system("man lexicon");
 }
 elsif ($ARGV[0] eq "-u"){
   system("sh /usr/local/bin/up.sh");
