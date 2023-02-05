@@ -1,20 +1,20 @@
 #!/usr/bin/perl -w
 if (defined $ARGV[0]){
-if ($ARGV[0] eq "-h"){
+if ($ARGV[0] eq "-h" || $ARGV[0] eq "--help"){
   print "-r       run\n-m       manpage\n-u       check for updates\n";
 }
-elsif ($ARGV[0] eq "-r"){
+elsif ($ARGV[0] eq "-r" || $ARGV[0] eq "--run"){
   system("/usr/local/bin/lexi.rb");
 }
-elsif ($ARGV[0] eq "-m"){
+elsif ($ARGV[0] eq "-m" || $ARGV[0] eq "--manpage"){
   system("man lexicon");
 }
-elsif ($ARGV[0] eq "-u"){
+elsif ($ARGV[0] eq "-u" || $ARGV[0] eq "--check-updates"){
   system("sh /usr/local/bin/up.sh");
 }
 else{
   print "lexicon: Invalid option: $ARGV[0]\n";
-  print "-r       run\n-m       manpage\n-u       check for updates\n";
+  print "-r, --run       run\n-m, --manpage       manpage\n-u, --check-updates       check for updates\n";
 }
 }
 else{
