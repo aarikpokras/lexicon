@@ -103,7 +103,9 @@ while 0
       end
     elsif lang[5].match(/Perl/) || lang[5].match(/perl/)
       if action == "print" || action == "Print"
-        puts "I don't know that just yet."
+        pprint = ["To print in Perl, you can run ","In Perl, you can print something to the console by "]
+        pout=pprint.sample(1)
+        puts pout << "print \"your content here\";"
       end
     else
       puts "Sorry, I don't know how to " << action << " in " << lang[5] << " yet.\nI'd recommend forking the repo, editing the code, and making a pull request.\n\033[1;37mhttps://github.com/aarikpokras/ai.rb/fork\033[0m\nOr it's possible that you used the wrong format.\n\033[1;37mHow do you print in Python\033[0m would be the correct format.\n"
